@@ -1,5 +1,5 @@
 import type { User } from "./user";
-import config from "../config.json";
+const config = require("../config.json");
 
 (async () => {
   const response = await fetch("http://localhost:3000/api/users");
